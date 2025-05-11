@@ -15,9 +15,12 @@ authenticator = stauth.Authenticate(
     config['cookie']['key'], config['cookie']['expiry_days']
 )
 
-name, auth_status, username = authenticator.login("Login", location="main")
+#name, auth_status, username = authenticator.login("Login", location="main")
+# Perform login
+authenticator.login(location="main")
 
-if auth_status:
+#if auth_status:
+ if st.session_state["authentication_status"]:
     authenticator.logout("Logout", "sidebar")
     st.sidebar.success(f"Welcome {name}!")
 
