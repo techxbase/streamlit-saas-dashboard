@@ -20,7 +20,7 @@ authenticator = stauth.Authenticate(
 authenticator.login(location="main")
 
 #if auth_status:
- if st.session_state["authentication_status"]:
+if st.session_state["authentication_status"]:
     authenticator.logout("Logout", "sidebar")
     st.sidebar.success(f"Welcome {name}!")
 
