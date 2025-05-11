@@ -1,0 +1,9 @@
+streamlit
+streamlit-authenticator
+pyyaml
+plotly
+pandas
+sqlalchemy
+psycopg2-binary
+stripe
+openpyxl
